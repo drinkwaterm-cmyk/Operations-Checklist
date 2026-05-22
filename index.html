@@ -34,23 +34,19 @@
   body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; background: var(--bg-tertiary); color: var(--text-primary); line-height: 1.6; min-height: 100vh; }
   .page { max-width: 900px; margin: 0 auto; padding: 1.5rem 1rem 4rem; }
 
-  /* HEADER */
   .dash-header { background: var(--bg); border: 0.5px solid var(--border); border-radius: var(--radius-lg); padding: 1.5rem 1.5rem 1.25rem; margin-bottom: 1.25rem; }
   .dash-header h1 { font-size: 22px; font-weight: 600; color: var(--text-primary); margin-bottom: 4px; }
   .dash-header .subtitle { font-size: 14px; color: var(--text-secondary); margin-bottom: 14px; }
   .meta-row { display: flex; gap: 6px; flex-wrap: wrap; }
   .meta-badge { font-size: 11px; padding: 3px 10px; border-radius: 20px; font-weight: 500; border: 0.5px solid var(--border-medium); color: var(--text-secondary); background: var(--bg-secondary); white-space: nowrap; }
 
-  /* NAV TABS */
   .tab-nav { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 1.25rem; }
   .tab-btn { font-size: 13px; font-weight: 500; padding: 6px 14px; border-radius: 20px; border: 0.5px solid var(--border-medium); background: var(--bg); color: var(--text-secondary); cursor: pointer; transition: all 0.15s; white-space: nowrap; }
   .tab-btn:hover { background: var(--bg-secondary); color: var(--text-primary); }
   .tab-btn.active { background: var(--text-primary); color: var(--bg); border-color: var(--text-primary); }
-
   .tab-panel { display: none; }
   .tab-panel.active { display: block; }
 
-  /* CROSS-DEPT */
   .overall-section { background: var(--bg); border: 0.5px solid var(--border); border-radius: var(--radius-lg); padding: 1.25rem; margin-bottom: 1.25rem; }
   .overall-title { font-size: 15px; font-weight: 600; color: var(--text-primary); margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
   .overall-title i { font-size: 18px; color: var(--info-text); }
@@ -60,7 +56,6 @@
   .ov-card-title i { font-size: 15px; }
   .ov-card-body { font-size: 12px; color: var(--text-secondary); line-height: 1.5; }
 
-  /* EXEC LENS */
   .lens-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 10px; margin-bottom: 1.25rem; }
   .lens-card { padding: 1rem; border-radius: var(--radius-lg); border: 0.5px solid var(--border); background: var(--bg); }
   .lens-num { font-size: 22px; font-weight: 700; margin-bottom: 4px; }
@@ -71,7 +66,6 @@
   .lens-3 .lens-num { color: var(--info-text); }
   .lens-4 .lens-num { color: var(--purple-text); }
 
-  /* FIRST MEETING */
   .meeting-section { background: var(--bg); border: 0.5px solid var(--border); border-radius: var(--radius-lg); margin-bottom: 10px; overflow: hidden; }
   .meeting-header { display: flex; align-items: center; justify-content: space-between; padding: 1rem 1.25rem; cursor: pointer; user-select: none; transition: background 0.15s; }
   .meeting-header:hover { background: var(--bg-secondary); }
@@ -83,17 +77,13 @@
   .meeting-section.open .chevron { transform: rotate(180deg); }
   .meeting-body { display: none; border-top: 0.5px solid var(--border); padding: 1.25rem; }
   .meeting-section.open .meeting-body { display: block; }
-
   .goal-banner { background: var(--info-bg); border: 0.5px solid var(--info-border); border-radius: var(--radius-md); padding: 0.75rem 1rem; margin-bottom: 1rem; font-size: 13px; color: var(--info-text); font-style: italic; }
   .third-rail { background: var(--danger-bg); border: 0.5px solid var(--danger-border); border-radius: var(--radius-md); padding: 0.75rem 1rem; margin-bottom: 1rem; font-size: 13px; color: var(--danger-text); }
-  .third-rail strong { font-weight: 600; }
-
   .q-list { display: flex; flex-direction: column; gap: 10px; }
   .q-item { background: var(--bg-secondary); border: 0.5px solid var(--border); border-radius: var(--radius-md); padding: 0.85rem 1rem; }
   .q-topic { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.07em; color: var(--text-tertiary); margin-bottom: 5px; }
-  .q-text { font-size: 13px; color: var(--text-primary); font-style: italic; line-height: 1.55; border-left: 2px solid var(--border-medium); padding-left: 10px; margin-bottom: 0; }
+  .q-text { font-size: 13px; color: var(--text-primary); font-style: italic; line-height: 1.55; border-left: 2px solid var(--border-medium); padding-left: 10px; }
 
-  /* EXEC PROMPT */
   .prompt-section { background: var(--bg); border: 0.5px solid var(--border); border-radius: var(--radius-lg); padding: 1.25rem; margin-bottom: 1.25rem; }
   .prompt-title { font-size: 15px; font-weight: 600; color: var(--text-primary); margin-bottom: 4px; display: flex; align-items: center; gap: 8px; }
   .prompt-title i { font-size: 18px; color: var(--purple-text); }
@@ -104,7 +94,6 @@
   .prompt-card-title { font-size: 13px; font-weight: 600; color: var(--text-primary); margin-bottom: 6px; }
   .prompt-card-q { font-size: 12px; color: var(--text-secondary); font-style: italic; line-height: 1.5; border-left: 2px solid var(--border-medium); padding-left: 8px; }
 
-  /* DEPT CARDS (monitoring tab) */
   .dept-card { background: var(--bg); border: 0.5px solid var(--border); border-radius: var(--radius-lg); margin-bottom: 10px; overflow: hidden; }
   .dept-header { display: flex; align-items: center; justify-content: space-between; padding: 1rem 1.25rem; cursor: pointer; user-select: none; transition: background 0.15s; }
   .dept-header:hover { background: var(--bg-secondary); }
@@ -133,11 +122,15 @@
   .item-row:last-child { border-bottom: none; }
   .item-title { font-size: 14px; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; display: flex; align-items: flex-start; gap: 8px; }
   .item-title i { margin-top: 2px; color: var(--text-tertiary); font-size: 14px; flex-shrink: 0; }
-  .item-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
-  @media (max-width: 640px) { .item-grid { grid-template-columns: 1fr; } }
+
+  /* Two-column layout for monitoring items */
+  .item-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  @media (max-width: 580px) { .item-grid { grid-template-columns: 1fr; } }
+
   .item-cell { padding: 0.65rem 0.75rem; border-radius: var(--radius-md); border: 0.5px solid var(--border); background: var(--bg-secondary); }
   .cell-label { font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.07em; color: var(--text-tertiary); margin-bottom: 5px; }
   .cell-body { font-size: 12px; color: var(--text-secondary); line-height: 1.55; }
+  .cell-verify { font-size: 12px; color: var(--text-primary); line-height: 1.55; }
 
   .why-badge { display: inline-flex; align-items: center; gap: 4px; font-size: 10px; padding: 2px 8px; border-radius: 10px; margin-top: 5px; font-weight: 600; }
   .badge-red { background: var(--danger-bg); color: var(--danger-text); border: 0.5px solid var(--danger-border); }
@@ -159,7 +152,6 @@
   }
 
   .section-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-tertiary); margin: 1.25rem 0 0.6rem; padding: 0 0.1rem; }
-
   .footer { text-align: center; font-size: 11px; color: var(--text-tertiary); margin-top: 2rem; padding-top: 1rem; border-top: 0.5px solid var(--border); }
 
   @media print {
@@ -189,14 +181,13 @@
   </div>
 
   <div class="tab-nav">
-    <button class="tab-btn active" onclick="switchTab('overview')">Overview</button>
-    <button class="tab-btn" onclick="switchTab('firstmeet')">First Meetings</button>
-    <button class="tab-btn" onclick="switchTab('monitoring')">Compliance Monitoring</button>
+    <button class="tab-btn active" onclick="switchTab('overview', this)">Overview</button>
+    <button class="tab-btn" onclick="switchTab('firstmeet', this)">First Meetings</button>
+    <button class="tab-btn" onclick="switchTab('monitoring', this)">Compliance Monitoring</button>
   </div>
 
-  <!-- ═══════════════════════════════════ TAB: OVERVIEW ═══════════════════════════════════ -->
+  <!-- TAB: OVERVIEW -->
   <div class="tab-panel active" id="tab-overview">
-
     <div class="overall-section">
       <div class="overall-title"><i class="ti ti-layout-dashboard"></i> Cross-department priorities</div>
       <div class="ov-grid">
@@ -238,22 +229,18 @@
         </div>
       </div>
     </div>
-
   </div>
 
-  <!-- ═══════════════════════════════════ TAB: FIRST MEETINGS ═══════════════════════════════════ -->
+  <!-- TAB: FIRST MEETINGS -->
   <div class="tab-panel" id="tab-firstmeet">
-
     <div class="overall-section" style="margin-bottom:1.25rem">
       <div class="overall-title"><i class="ti ti-microphone"></i> First meeting strategy</div>
       <p style="font-size:13px;color:var(--text-secondary);line-height:1.6">You don't need to know how to fix a bus transmission or program a commercial chiller. Your job is <strong style="color:var(--text-primary)">governance, risk management, resource allocation, and strategic support</strong>. These questions establish your executive lens while respecting each director's technical expertise.</p>
     </div>
-
     <div id="meetings"></div>
-
   </div>
 
-  <!-- ═══════════════════════════════════ TAB: COMPLIANCE MONITORING ═══════════════════════════════════ -->
+  <!-- TAB: COMPLIANCE MONITORING -->
   <div class="tab-panel" id="tab-monitoring">
     <div id="depts"></div>
   </div>
@@ -262,15 +249,14 @@
 </div>
 
 <script>
-// ── TAB SWITCHING ──────────────────────────────────────────────
-function switchTab(id) {
+function switchTab(id, btn) {
   document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
   document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
   document.getElementById('tab-' + id).classList.add('active');
-  event.target.classList.add('active');
+  btn.classList.add('active');
 }
 
-// ── FIRST MEETING DATA ─────────────────────────────────────────
+// ── FIRST MEETING DATA ──────────────────────────────────────────
 const MEETINGS = [
   {
     id: "mt", icon: "ti-bus", iconClass: "icon-meeting-t",
@@ -322,66 +308,132 @@ const MEETINGS = [
   }
 ];
 
-function buildMeetings() {
-  return MEETINGS.map(m => `
-    <div class="meeting-section" id="ms${m.id}">
-      <div class="meeting-header" onclick="toggleMeeting('ms${m.id}')">
-        <div class="meeting-header-left">
-          <div class="meeting-icon ${m.iconClass}"><i class="ti ${m.icon}"></i></div>
-          <div><div class="meeting-title">${m.title}</div><div class="meeting-subtitle">${m.subtitle}</div></div>
-        </div>
-        <i class="ti ti-chevron-down chevron"></i>
+document.getElementById('meetings').innerHTML = MEETINGS.map(m => `
+  <div class="meeting-section" id="ms${m.id}">
+    <div class="meeting-header" onclick="toggleMeeting('ms${m.id}')">
+      <div class="meeting-header-left">
+        <div class="meeting-icon ${m.iconClass}"><i class="ti ${m.icon}"></i></div>
+        <div><div class="meeting-title">${m.title}</div><div class="meeting-subtitle">${m.subtitle}</div></div>
       </div>
-      <div class="meeting-body">
-        <div class="goal-banner"><strong>Goal:</strong> ${m.goal}</div>
-        <div class="third-rail">${m.thirdRail}</div>
-        <div class="q-list">
-          ${m.questions.map(q => `
-            <div class="q-item">
-              <div class="q-topic">${q.topic}</div>
-              <div class="q-text">"${q.q}"</div>
-            </div>`).join('')}
-        </div>
+      <i class="ti ti-chevron-down chevron"></i>
+    </div>
+    <div class="meeting-body">
+      <div class="goal-banner"><strong>Goal:</strong> ${m.goal}</div>
+      <div class="third-rail">${m.thirdRail}</div>
+      <div class="q-list">
+        ${m.questions.map(q => `
+          <div class="q-item">
+            <div class="q-topic">${q.topic}</div>
+            <div class="q-text">"${q.q}"</div>
+          </div>`).join('')}
       </div>
-    </div>`).join('');
-}
+    </div>
+  </div>`).join('');
 
-document.getElementById('meetings').innerHTML = buildMeetings();
 function toggleMeeting(id) { document.getElementById(id).classList.toggle('open'); }
 
-// ── COMPLIANCE MONITORING DATA ─────────────────────────────────
+// ── COMPLIANCE MONITORING DATA ──────────────────────────────────
+// Each item now has distinct fields:
+//   why   — short risk/impact label (badge)
+//   risk  — 1-sentence "why it matters" for the executive
+//   regs  — specific regulation / agency / compliance detail
+//   verify — questions to ask the director
 const DEPTS = [
   {
     id: "nutrition", icon: "ti-salad", iconClass: "icon-nutrition",
     title: "Child Nutrition", subtitle: "USDA · TDA · TEA · HACCP · NSLP / SBP / CEP",
     freqs: [
       { label: "Daily", color: "#E24B4A", items: [
-        { title: "Meal counts & point-of-service records", why: "Federal reimbursement", whyClass: "badge-red", what: "Accurate counts by category (free/reduced/paid) are required daily for USDA reimbursement claims. Errors trigger claim disallowances and audits.", verify: "Are meal counts reconciled against attendance each day? Is the POS system functioning and backed up?" },
-        { title: "HACCP temperature logs", why: "Food safety / liability", whyClass: "badge-red", what: "All hot/cold food items must be logged at critical control points (receiving, cooking, holding, cooling). Failures can cause foodborne illness outbreaks.", verify: "Are logs completed without gaps? Any items discarded or corrected? Who is the responsible staff member at each campus?" },
-        { title: "Participation & service line readiness", why: "Program quality", whyClass: "badge-blue", what: "Ensuring breakfast and lunch are served on time and fully stocked affects participation rates, which directly impact reimbursement totals.", verify: "Were any campuses unable to serve a full menu? Any shortages reported? What's the daily participation rate trend?" }
+        { title: "Meal counts & point-of-service records",
+          why: "Federal reimbursement", whyClass: "badge-red",
+          risk: "Inaccurate counts by category (free/reduced/paid) trigger USDA claim disallowances, repayment demands, and audit flags.",
+          regs: "USDA 7 CFR Part 210 requires daily point-of-service counts. TDA reviews count accuracy during Administrative Reviews.",
+          verify: "Are meal counts reconciled against attendance daily? Is the POS system functioning and backed up at every campus?" },
+        { title: "HACCP temperature logs",
+          why: "Food safety / liability", whyClass: "badge-red",
+          risk: "A single gap in temperature logs during a foodborne illness investigation becomes the district's primary liability document.",
+          regs: "USDA requires all Child Nutrition programs to implement a HACCP-based food safety plan. TDA verifies logs during reviews.",
+          verify: "Are logs completed without gaps at every critical control point? Who is the accountable staff member at each campus?" },
+        { title: "Participation & service line readiness",
+          why: "Program quality / revenue", whyClass: "badge-blue",
+          risk: "Low participation directly reduces federal reimbursement totals — every missed meal is lost revenue for the fund.",
+          regs: "Participation rates are reported to TEA/TDA and benchmarked during Administrative Reviews. CEP claiming percentages depend on accurate participation data.",
+          verify: "Were any campuses unable to serve a full menu? What's the daily participation trend by campus? Any campuses consistently below district average?" }
       ]},
       { label: "Weekly", color: "#E8A020", items: [
-        { title: "Menu compliance with meal pattern requirements", why: "USDA / TDA compliance", whyClass: "badge-red", what: "USDA meal patterns require specific quantities of grains, protein, fruits, vegetables, and dairy by age group. Non-compliance reduces reimbursement to paid rate.", verify: "Is the menu planned and approved in advance? Are component requirements met every day of the week, not just averaged?" },
-        { title: "Inventory & waste review", why: "Budget / efficiency", whyClass: "badge-amber", what: "Weekly inventory reviews catch over-ordering, spoilage, and theft. TDA and auditors may review food cost percentages during reviews.", verify: "What is the current food cost percentage? Any unexplained variances in inventory counts?" },
-        { title: "Staff coverage & substitute review", why: "Operations continuity", whyClass: "badge-blue", what: "Understaffed kitchens create food safety risks and service delays. A pattern of vacancies signals retention or pay issues.", verify: "Are all critical positions filled? Any campuses operating below minimum staffing? Are sub shortages recurring?" }
+        { title: "Menu compliance with meal pattern requirements",
+          why: "USDA / TDA compliance", whyClass: "badge-red",
+          risk: "Failing to meet meal pattern components — even for one day — can reduce the entire week's reimbursement to the paid rate, not the free/reduced rate.",
+          regs: "USDA 7 CFR 210.10 specifies required components (grains, protein, fruit, vegetable, dairy/milk) by age/grade group. TDA audits menus during Administrative Reviews.",
+          verify: "Is the menu planned and TDA-approved in advance? Are daily component requirements met — not just weekly averages?" },
+        { title: "Inventory & waste review",
+          why: "Budget / theft prevention", whyClass: "badge-amber",
+          risk: "Unmonitored inventory creates opportunities for over-ordering, spoilage, and misappropriation — all Fund 240 audit risks.",
+          regs: "TDA and single-audit reviewers examine food cost percentages and inventory controls. Fund 240 requires expenditures to be reasonable and necessary.",
+          verify: "What is the current food cost percentage? Any unexplained variances between ordered and counted inventory?" },
+        { title: "Staff coverage & substitute review",
+          why: "Operations continuity", whyClass: "badge-blue",
+          risk: "Understaffed kitchens are a food safety risk and will force menu substitutions that may violate meal pattern requirements.",
+          regs: "USDA requires meals to be prepared by trained staff following the HACCP plan. Chronic understaffing may indicate a staffing model that needs adjustment.",
+          verify: "Are all critical kitchen positions filled this week? Any campuses running below minimum staffing? Is there a trained sub pool available?" }
       ]},
       { label: "Monthly", color: "#BA7517", items: [
-        { title: "USDA claim submission", why: "Federal reimbursement funding", whyClass: "badge-red", what: "Monthly claims for NSLP, SBP, and SFSP must be submitted to TDA by the deadline (typically 60 days after month end). Late claims result in lost reimbursements.", verify: "Was the claim submitted on time? Were any adjustments required? What is the monthly reimbursement total vs. projections?" },
-        { title: "Eligibility & benefit issuance review", why: "USDA / equity", whyClass: "badge-amber", what: "Under CEP or traditional eligibility, student benefit records must be accurate. Errors in eligibility rosters trigger audit findings and potential repayment.", verify: "Are eligibility lists current? Have any students been incorrectly charged or denied free meals? Is the CEP claiming percentage accurate?" },
-        { title: "Equipment & facility inspection", why: "Health code / safety", whyClass: "badge-amber", what: "Commercial kitchen equipment must be maintained per health code. Equipment failures risk health department violations and service disruption.", verify: "Are all refrigeration units holding proper temps? Any equipment work orders overdue? When was the last pest control visit?" }
+        { title: "USDA claim submission",
+          why: "Federal reimbursement funding", whyClass: "badge-red",
+          risk: "Late or missing claims result in permanent loss of that month's federal reimbursement — there is no recovery after the 60-day window.",
+          regs: "USDA requires monthly claims for NSLP, SBP, and SFSP to be submitted to TDA no later than 60 days after the last day of the claim month.",
+          verify: "Was the claim submitted on time? Were any adjustments required? How does this month's reimbursement compare to budget projections?" },
+        { title: "Eligibility & benefit issuance review",
+          why: "USDA equity / audit risk", whyClass: "badge-amber",
+          risk: "Errors in eligibility records — a student charged who should be free, or an inflated CEP claiming percentage — are among the most common TDA audit findings.",
+          regs: "USDA income eligibility is governed by 7 CFR 245. CEP claiming percentages must be recalculated annually using current enrollment data.",
+          verify: "Are eligibility lists current and reconciled with enrollment? Have any students been incorrectly charged? Is the CEP claiming percentage verified for this year?" },
+        { title: "Equipment & facility inspection",
+          why: "Health code / service continuity", whyClass: "badge-amber",
+          risk: "A walk-in cooler failure during summer production or an oven outage on serving day can shut down a campus kitchen and generate a health department complaint.",
+          regs: "Local health codes and USDA facility standards require commercial kitchen equipment to be maintained in good repair. TDA may note equipment deficiencies during reviews.",
+          verify: "Are all refrigeration units holding proper temps? Any overdue equipment work orders? When was the last pest control service at each campus?" }
       ]},
       { label: "Quarterly", color: "#639922", items: [
-        { title: "HACCP plan review & staff training", why: "Food safety / TDA requirement", whyClass: "badge-red", what: "TDA requires a documented HACCP plan reviewed regularly. All staff must receive food safety training. A single untrained employee can trigger a TDA finding.", verify: "Is the HACCP plan current and signed? What percentage of nutrition staff hold a valid food handler card? When is the next food safety training?" },
-        { title: "Budget vs. actual review", why: "Fund 240 compliance", whyClass: "badge-amber", what: "Child Nutrition operates on Fund 240 (federal restricted). Expenditures must align with approved budget categories. Surplus or deficit triggers TEA review.", verify: "Is Fund 240 solvent? Are there any out-of-compliance expenditures? What is the fund balance trend?" }
+        { title: "HACCP plan review & staff training",
+          why: "Food safety / TDA mandate", whyClass: "badge-red",
+          risk: "An untrained employee handling food — or an outdated HACCP plan — is the first thing TDA reviewers look for and the fastest path to a fiscal finding.",
+          regs: "USDA requires all Child Nutrition programs to have a written, site-specific HACCP plan reviewed regularly. TDA verifies training records for all food service staff during Administrative Reviews.",
+          verify: "Is the HACCP plan current, signed, and campus-specific? What percentage of nutrition staff hold a valid food handler card? When is the next training cycle?" },
+        { title: "Budget vs. actual review",
+          why: "Fund 240 solvency", whyClass: "badge-amber",
+          risk: "Fund 240 (Child Nutrition) must remain solvent. A fund balance below 3 months of operating expenses or repeated deficits triggers TEA review and potential corrective action.",
+          regs: "TEA requires Fund 240 to be self-sustaining under EDGAR and state financial accountability rules. Non-food expenditures from Fund 240 are prohibited.",
+          verify: "Is Fund 240 on budget year-to-date? Any expenditure categories running over? What is the projected fund balance at year-end?" }
       ]},
       { label: "Semi-Annual", color: "#185FA5", items: [
-        { title: "Local wellness policy review", why: "USDA / community trust", whyClass: "badge-blue", what: "Federal law requires districts to review and update their local wellness policy. Public reporting is required. Non-compliance affects USDA administrative reviews.", verify: "Has the wellness policy been reviewed this year? Has a public meeting been held? Is documentation on file?" },
-        { title: "Internal administrative review (pre-TDA)", why: "TDA review prep", whyClass: "badge-red", what: "TDA conducts Administrative Reviews every 3–5 years. Self-reviews catch deficiencies before state reviewers do. Findings can result in repayment demands.", verify: "Has the director completed an internal review using TDA's tool? Were any corrective actions identified and closed?" }
+        { title: "Local wellness policy review",
+          why: "USDA / federal mandate", whyClass: "badge-blue",
+          risk: "Failure to maintain and publicly report on the Local Wellness Policy is a citable deficiency during USDA Administrative Reviews.",
+          regs: "The Healthy, Hunger-Free Kids Act (42 U.S.C. 1758b) requires districts to review, update, and publicly report on their Local Wellness Policy each school year.",
+          verify: "Has the wellness policy been reviewed and updated this year? Is public notification documented? Is the triennial assessment on schedule?" },
+        { title: "Internal administrative review (pre-TDA)",
+          why: "TDA review readiness", whyClass: "badge-red",
+          risk: "TDA fiscal findings can require repayment of federal funds going back multiple years. Self-reviews catch deficiencies while there is still time to correct them without penalty.",
+          regs: "TDA conducts Administrative Reviews of every district's Child Nutrition program on a 3–5 year cycle. Districts may use TDA's self-assessment tool to prepare.",
+          verify: "Has the director completed a TDA-style internal review this semester? Were any corrective actions identified? Are those corrections documented and closed?" }
       ]},
       { label: "Annual", color: "#534AB7", items: [
-        { title: "TDA administrative review readiness", why: "Federal program integrity", whyClass: "badge-red", what: "TDA reviews every district's NSLP/SBP administration. Findings of fiscal action can require repayment of federal funds. A poor review leads to increased oversight.", verify: "When was our last TDA review? What were the findings and are all corrective actions documented as resolved?" },
-        { title: "SNS director certification renewal", why: "USDA / TDA mandate", whyClass: "badge-amber", what: "The nutrition program director must hold or be actively pursuing SNS certification. Loss of certification can disqualify the director from the role.", verify: "Is the director's certification current? What is the renewal date? Are continuing education hours on track?" },
-        { title: "Equipment replacement & capital plan", why: "Budget / service continuity", whyClass: "badge-amber", what: "Commercial kitchen equipment has a 10–15 year useful life. A capital replacement plan prevents emergency spending.", verify: "Is there a 5-year equipment replacement schedule? Have any items exceeded useful life? Are replacements budgeted?" }
+        { title: "TDA administrative review readiness",
+          why: "Federal program integrity", whyClass: "badge-red",
+          risk: "A TDA Administrative Review with fiscal findings can require repayment of reimbursements and trigger increased monitoring — including annual reviews for multiple years.",
+          regs: "TDA reviews all NSLP/SBP/SFSP operations under USDA FNS Instruction 7 CFR 210.18. Corrective action plans are required for any findings and tracked by TDA.",
+          verify: "When was our last TDA review? What were the findings? Are all corrective actions fully documented as resolved before the next review cycle?" },
+        { title: "SNS director certification renewal",
+          why: "USDA / TDA credential mandate", whyClass: "badge-amber",
+          risk: "A nutrition director without active SNS (or equivalent) certification may be disqualified from their role, which disrupts program operations and could affect TDA program approval.",
+          regs: "USDA requires the person responsible for the Child Nutrition program to meet professional standards (7 CFR 210.30). TDA enforces this requirement during reviews.",
+          verify: "Is the director's SNS certification active? What is the renewal date? Are required continuing education hours documented and on track?" },
+        { title: "Equipment replacement & capital plan",
+          why: "Asset life / budget planning", whyClass: "badge-amber",
+          risk: "Emergency equipment replacement from operating funds disrupts Fund 240 solvency. Board-approved capital plans protect the fund and signal long-term program sustainability.",
+          regs: "USDA and TEA expect Child Nutrition facilities to be maintained in good working condition. Capital equipment replacement should be included in the district's long-range plan.",
+          verify: "Is there a 5-year equipment replacement schedule? How many items are past useful life? Are replacements budgeted in the capital plan?" }
       ]}
     ]
   },
@@ -390,30 +442,86 @@ const DEPTS = [
     title: "Transportation", subtitle: "TxDPS · TEA · TxDOT · CDL / TECS / 19 TAC Chapter 14",
     freqs: [
       { label: "Daily", color: "#E24B4A", items: [
-        { title: "Pre/post-trip vehicle inspections", why: "State mandate / student safety", whyClass: "badge-red", what: "Texas law requires drivers to complete pre-trip and post-trip inspections on all buses. Post-trip child checks are mandatory. Failure is a TxDPS citation and major liability.", verify: "Are all drivers completing and submitting inspection forms? Are defects written up and repaired before the next run? Is the post-trip child check being documented?" },
-        { title: "Route completion & on-time performance", why: "Community trust / safety", whyClass: "badge-blue", what: "Missed stops, late routes, or unreported breakdowns signal dispatch or staffing problems. Complaints reach principals and board members quickly.", verify: "Were all routes completed on time? Any breakdowns or missed stops? How many uncovered routes today?" },
-        { title: "Driver attendance & substitute coverage", why: "Route coverage / safety", whyClass: "badge-amber", what: "Routes driven by uncertified substitutes, or left uncovered, are a safety risk and potential TxDPS violation. Driver shortages are the #1 transportation crisis statewide.", verify: "How many drivers called out? Were all routes covered by qualified drivers? What is the substitute driver availability rate?" }
+        { title: "Pre/post-trip vehicle inspections",
+          why: "State mandate / student safety", whyClass: "badge-red",
+          risk: "A student injury on a bus with a documented but uncorrected defect is the district's worst liability scenario — and it happens.",
+          regs: "19 TAC §14.004 and Texas Transportation Code require pre- and post-trip inspections for every school bus operation. Post-trip child safety checks are a separate mandatory step.",
+          verify: "Are all drivers submitting completed inspection forms daily? Are defects written up and taken out of service before the next run? Is the post-trip child check being logged?" },
+        { title: "Route completion & on-time performance",
+          why: "Community trust / safety", whyClass: "badge-blue",
+          risk: "A missed stop leaves a child at the roadside. Even without injury, the parent complaint chain reaches the board within 24 hours.",
+          regs: "Districts are responsible for safe transport of all eligible students. Persistent route failures can be raised during TEA accreditation reviews.",
+          verify: "Were all routes completed on time today? Any missed stops or unreported breakdowns? How many uncovered routes this week?" },
+        { title: "Driver attendance & substitute coverage",
+          why: "Route coverage / TxDPS compliance", whyClass: "badge-amber",
+          risk: "A route covered by an uncertified driver — or not covered at all — is both a TxDPS violation and an immediate safety and liability exposure.",
+          regs: "All school bus drivers must hold a valid Texas CDL-B with passenger endorsement and a current TECS authorization (19 TAC §14.003). Uncertified drivers operating buses is a citable violation.",
+          verify: "How many drivers called out today? Were all routes covered by TECS-certified drivers? What is the current substitute driver pool size?" }
       ]},
       { label: "Weekly", color: "#E8A020", items: [
-        { title: "Fleet maintenance work orders & turnaround", why: "Safety / asset protection", whyClass: "badge-red", what: "Open safety-related work orders on active buses are a liability. Buses with outstanding safety defects should not be in service. Deferred maintenance shortens fleet life.", verify: "How many buses are currently out of service? What is the average work order turnaround time? Are any safety-critical repairs deferred?" },
-        { title: "Route efficiency & ridership review", why: "Budget / fuel cost", whyClass: "badge-amber", what: "Routes with very low ridership cost disproportionately to run. Regular review allows consolidation and savings. TEA's allotment formula rewards efficiency.", verify: "Are any routes running with fewer than 10 students? Have routes been evaluated for consolidation?" }
+        { title: "Fleet maintenance work orders & turnaround",
+          why: "Safety / asset management", whyClass: "badge-red",
+          risk: "Operating a bus with an open safety defect exposes the district to catastrophic liability if an incident occurs. Deferred maintenance also shortens vehicle useful life and inflates replacement costs.",
+          regs: "TxDPS school bus inspection standards require buses to be maintained in safe operating condition at all times. Districts must document maintenance records.",
+          verify: "How many buses are currently out of service? What is the average work order close-out time? Are any safety-critical repairs on open status?" },
+        { title: "Route efficiency & ridership review",
+          why: "Budget / TEA allotment", whyClass: "badge-amber",
+          risk: "Routes with very low ridership are a budget drain and can reduce the district's TEA transportation allotment efficiency score.",
+          regs: "TEA's transportation allotment formula (TEC §48.151) weights route efficiency. TDA and TEA may flag disproportionate cost-per-rider during financial reviews.",
+          verify: "Are any routes averaging fewer than 10 students? Has the director evaluated consolidation opportunities for the current year?" }
       ]},
       { label: "Monthly", color: "#BA7517", items: [
-        { title: "Driver CDL & license status audit", why: "TxDPS / legal mandate", whyClass: "badge-red", what: "All bus drivers must hold a valid Texas CDL with passenger endorsement. A driver operating with a suspended or expired CDL exposes the district to enormous liability.", verify: "Has the director pulled MVR records this month? Are any drivers flagged for violations or expired credentials? Who is responsible for monthly checks?" },
-        { title: "Accident & incident log review", why: "Liability / TEA reporting", whyClass: "badge-red", what: "All transportation accidents involving students must be documented. TEA requires reporting of certain incidents. Patterns indicate route, driver, or training issues.", verify: "How many incidents occurred this month? Were all reported to appropriate parties? Are corrective actions documented?" },
-        { title: "Fuel consumption & cost tracking", why: "Budget management", whyClass: "badge-amber", what: "Fuel is one of the largest transportation expenses. Tracking consumption against mileage catches fueling irregularities and helps forecast budget needs.", verify: "Is fuel cost tracking current? Any unusual consumption spikes? Is diesel procurement under a state contract (TXMAS or HGACBuy)?" }
+        { title: "Driver CDL & license status audit",
+          why: "TxDPS / legal liability", whyClass: "badge-red",
+          risk: "A driver with a suspended license operating a school bus is indefensible in litigation. MVR monitoring is the district's primary protection.",
+          regs: "Texas law requires districts to verify driver license status regularly. TxDPS and TEA both expect districts to have an active MVR monitoring process in place.",
+          verify: "Has the director pulled MVR records this month? Any drivers flagged for violations, suspensions, or upcoming expirations? Who owns this process?" },
+        { title: "Accident & incident log review",
+          why: "Liability / TEA reporting", whyClass: "badge-red",
+          risk: "Unlogged or late-reported incidents become evidence of negligence in litigation. Patterns in incident data indicate systemic route, driver, or training failures.",
+          regs: "Certain transportation incidents must be reported to TEA. All accidents involving students must be documented per district policy and insurance carrier requirements.",
+          verify: "How many incidents occurred this month? Were all reported to principals, insurance, and TEA as required? Are corrective actions for repeat incidents documented?" },
+        { title: "Fuel consumption & cost tracking",
+          why: "Budget management", whyClass: "badge-amber",
+          risk: "Untracked fuel consumption masks theft, fueling inefficiencies, and budget overruns that can cause mid-year shortfalls in the transportation fund.",
+          regs: "State procurement rules require fuel purchases to follow competitive pricing requirements. HGACBuy and TXMAS contracts are available for school districts.",
+          verify: "Is consumption tracked against mileage by vehicle? Any unexplained spikes? Is fuel purchased under a state contract for best pricing?" }
       ]},
       { label: "Quarterly", color: "#639922", items: [
-        { title: "Driver training & road test compliance", why: "TxDPS / TECS certification", whyClass: "badge-red", what: "Texas requires school bus drivers to hold a Texas School Bus Driver Authorization (TECS). New drivers must complete approved training. Annual refresher is strongly recommended.", verify: "Are all TECS certifications current? Is the training calendar established? Any new hires behind on required training?" },
-        { title: "Fleet age & capital replacement plan", why: "Safety / TEA funding formula", whyClass: "badge-amber", what: "TEA's transportation allotment considers fleet age and mileage. Buses older than 15 years or with high mileage should be on a replacement schedule.", verify: "What is the average fleet age? How many buses are beyond TEA's recommended replacement age? Is there an approved capital replacement budget?" }
+        { title: "Driver training & TECS compliance",
+          why: "TxDPS / state certification", whyClass: "badge-red",
+          risk: "An uncertified driver involved in an accident exposes the district to punitive damages beyond standard liability coverage.",
+          regs: "All Texas school bus drivers must hold a current Texas School Bus Driver Authorization (TECS) issued under 19 TAC §14.003. New drivers must complete state-approved initial training.",
+          verify: "Are all TECS certifications current with no upcoming expirations? Is the annual refresher training calendar established? Any new hires behind on required certification?" },
+        { title: "Fleet age & capital replacement plan",
+          why: "Safety / TEA allotment formula", whyClass: "badge-amber",
+          risk: "An aging fleet with deferred capital replacement inflates maintenance costs, increases breakdown frequency, and reduces the district's TEA transportation allotment.",
+          regs: "TEA's transportation allotment (TEC §48.151) uses fleet data submitted via PEIMS. Buses past useful life may not be counted favorably in the allotment formula.",
+          verify: "What is the average fleet age and mileage? How many buses exceed TEA's useful life guidelines? Is a board-approved replacement schedule in place?" }
       ]},
       { label: "Semi-Annual", color: "#185FA5", items: [
-        { title: "TxDPS annual bus inspection prep", why: "State law / mandatory inspection", whyClass: "badge-red", what: "Every Texas school bus must pass an annual TxDPS safety inspection. Buses that fail cannot transport students. A single failure season can cripple routes.", verify: "When is the next inspection cycle? How many buses are currently inspection-ready? What was the pass rate last cycle and what items failed?" },
-        { title: "Emergency evacuation drill documentation", why: "TEA / safety mandate", whyClass: "badge-red", what: "Texas law requires school bus evacuation drills to be conducted with students. These must be documented and available for TEA review.", verify: "Have drills been conducted at all campuses served by transportation? Is documentation on file? Any campuses not yet completed?" }
+        { title: "TxDPS annual bus inspection readiness",
+          why: "State law / mandatory inspection", whyClass: "badge-red",
+          risk: "A bus that fails TxDPS inspection cannot transport students. Multiple failures in a single inspection cycle can leave the district unable to cover all routes.",
+          regs: "Texas Transportation Code §548.201 requires annual safety inspections of all school buses by TxDPS. Buses that fail may not operate until deficiencies are corrected and re-inspected.",
+          verify: "When is the next inspection cycle? How many buses are currently inspection-ready? What was the pass/fail rate in the last cycle and what were the common failure points?" },
+        { title: "Emergency evacuation drill documentation",
+          why: "TEA / state safety mandate", whyClass: "badge-red",
+          risk: "Missing evacuation drill documentation is a TEA compliance finding. More importantly, students who have never practiced evacuation are at higher risk in a real emergency.",
+          regs: "19 TAC §14.005 requires school bus evacuation drills to be conducted with students at least twice per year. Records must be maintained and available for TEA review.",
+          verify: "Have drills been conducted at all campuses served by transportation this semester? Is documentation complete with dates, campus names, and staff signatures?" }
       ]},
       { label: "Annual", color: "#534AB7", items: [
-        { title: "TEA transportation report (PEIMS / allotment)", why: "TEA funding", whyClass: "badge-red", what: "Transportation allotment funding is calculated based on data submitted to TEA. Errors in route mileage, ridership, or fleet data directly reduce allotment payments.", verify: "Who owns the PEIMS transportation data entry? Has it been reviewed for accuracy before submission? What is our current allotment per student?" },
-        { title: "Route restructuring review", why: "Efficiency / safety", whyClass: "badge-amber", what: "Annual review of all routes accounts for enrollment changes, boundary shifts, and new construction. Outdated routes create inefficiency and safety hazards.", verify: "Were routes updated to reflect current year enrollment and campus schedules? Were parents notified of changes before the school year?" }
+        { title: "TEA transportation report (PEIMS / allotment data)",
+          why: "TEA funding accuracy", whyClass: "badge-red",
+          risk: "Errors in PEIMS transportation data directly reduce the district's annual allotment payment — there is no retroactive correction after the submission window closes.",
+          regs: "Transportation allotment funding is calculated from PEIMS submissions under TEC §48.151. Data includes route mileage, eligible ridership, and fleet information.",
+          verify: "Who is responsible for the PEIMS transportation data entry? Has it been reviewed for accuracy before the submission deadline? What is our current allotment per eligible student?" },
+        { title: "Route restructuring review",
+          why: "Efficiency / safety", whyClass: "badge-amber",
+          risk: "Outdated routes that don't reflect current enrollment, campus boundaries, or construction create inefficiency, safety hazards, and parent complaints.",
+          regs: "Districts are responsible under TEC for providing safe transportation to eligible students. Route data must be accurate for PEIMS allotment reporting.",
+          verify: "Were all routes reviewed and updated for the current school year? Were parents notified of any changes before the first day of school?" }
       ]}
     ]
   },
@@ -422,45 +530,110 @@ const DEPTS = [
     title: "Maintenance, Facilities & Custodial", subtitle: "NFPA · TCEQ · OSHA · TDA · TEA · ADA / TAS · AHERA · TDLR",
     freqs: [
       { label: "Daily", color: "#E24B4A", items: [
-        { title: "Campus custodial completion & sign-off", why: "Hygiene / health code", whyClass: "badge-amber", what: "Daily cleaning checklists for restrooms, cafeterias, and classrooms establish accountability and protect against health complaints. Gaps are documented liability in personal injury claims.", verify: "Are custodial supervisors signing off on daily checklists? Any campuses reporting recurring cleaning complaints? Are log books retained?" },
-        { title: "Critical system status (HVAC, plumbing, electrical)", why: "Student & staff safety", whyClass: "badge-red", what: "Failures in HVAC, water, or electrical systems can close campuses and trigger instructional day loss. Texas heat makes HVAC failures a health emergency.", verify: "Is there a daily check process for HVAC at all campuses? Any open critical work orders? Is there an emergency after-hours contact protocol?" }
+        { title: "Campus custodial completion & sign-off",
+          why: "Hygiene / legal accountability", whyClass: "badge-amber",
+          risk: "A documented cleaning checklist is the district's defense in a slip-and-fall or illness complaint. Missing logs suggest negligence even when the work was done.",
+          regs: "Local health codes, TEA facility standards, and general liability insurance best practices all expect documented daily cleaning. Gaps are adverse evidence in litigation.",
+          verify: "Are custodial supervisors signing off on daily checklists at every campus? Any campuses generating recurring cleanliness complaints from principals?" },
+        { title: "Critical system status (HVAC, plumbing, electrical)",
+          why: "Student safety / campus closures", whyClass: "badge-red",
+          risk: "An HVAC failure in a Texas August can trigger a heat-related health emergency within hours, forcing campus closure and lost instructional days.",
+          regs: "TEA and TFC require school facilities to maintain safe indoor environments. Campus closures for facility failures must be reported and may affect district accountability ratings.",
+          verify: "Is there a morning check protocol for HVAC at all campuses? Any open critical work orders right now? Is there a 24/7 emergency contact and response protocol?" }
       ]},
       { label: "Weekly", color: "#E8A020", items: [
-        { title: "Work order backlog review", why: "Asset protection / liability", whyClass: "badge-amber", what: "An aging work order backlog signals deferred maintenance, which shortens asset life and increases injury liability. A trip-and-fall on a reported hazard is a district loss.", verify: "How many open work orders are over 30 days old? Are any involving safety hazards? What's the average close-out time?" },
-        { title: "Grounds & exterior safety walk", why: "ADA / liability / TEA", whyClass: "badge-amber", what: "Grounds hazards (broken sidewalks, drainage issues, parking lot damage) are both liability and ADA compliance concerns. TEA facility inspectors look at exterior condition.", verify: "Are grounds inspections documented weekly? Any unresolved ADA pathway issues? Any drainage problems near entrances?" }
+        { title: "Work order backlog review",
+          why: "Liability / asset preservation", whyClass: "badge-amber",
+          risk: "A documented but unrepaired hazard (loose flooring, broken handrail, leaking ceiling) that causes injury is the district's worst-case premises liability scenario.",
+          regs: "OSHA General Duty Clause requires employers to maintain workplaces free of recognized hazards. TEA facility reviews flag deferred maintenance as a deficiency.",
+          verify: "How many open work orders are older than 30 days? Are any flagged as safety hazards? What is the department's current average close-out time?" },
+        { title: "Grounds & exterior safety walk",
+          why: "ADA / liability", whyClass: "badge-amber",
+          risk: "Broken sidewalks, blocked accessible routes, or drainage flooding near entrances are ADA violations and trip-and-fall liability — and they're visible to every parent who visits.",
+          regs: "ADA Title II and TAS (Texas Accessibility Standards) require accessible routes to be maintained. TEA facility inspectors document exterior conditions during campus visits.",
+          verify: "Are grounds inspections logged weekly? Any unresolved ADA pathway deficiencies? Any drainage or flooding issues near building entrances or parking lots?" }
       ]},
       { label: "Monthly", color: "#BA7517", items: [
-        { title: "Fire alarm & suppression system test log", why: "NFPA / TEA / life safety", whyClass: "badge-red", what: "NFPA 72 and TEA require regular testing of fire alarm systems. Monthly visual inspections and quarterly tests are standard. Failure to test and document is a code violation.", verify: "Are monthly fire panel checks being logged? Who is the licensed fire alarm contractor for annual testing? Are records on file at each campus?" },
-        { title: "Pest control records (IPM compliance)", why: "TDA / TCEQ / health", whyClass: "badge-amber", what: "Texas requires school districts to use an Integrated Pest Management (IPM) program. The district must have a licensed IPM coordinator. Records of all pesticide applications must be maintained.", verify: "Is our IPM coordinator licensed with TDA? Are pesticide application logs current at all campuses? Has parent/staff notification protocol been followed?" },
-        { title: "Preventive maintenance schedule adherence", why: "Asset life / insurance", whyClass: "badge-amber", what: "PM schedules for HVAC, generators, elevators, and roofing protect asset warranties and insurance coverage. Skipping PM voids warranties.", verify: "Is the PM schedule on track for the current month? What percentage of scheduled PM tasks are being completed on time?" }
+        { title: "Fire alarm & suppression system test log",
+          why: "NFPA / life safety / insurance", whyClass: "badge-red",
+          risk: "An untested fire alarm that fails during an actual fire is both a potential mass-casualty event and a criminal negligence exposure for district leadership.",
+          regs: "NFPA 72 requires monthly visual inspections and periodic testing of fire alarm systems. TEA and the State Fire Marshal's Office may review testing records. Insurance carriers require documented compliance.",
+          verify: "Are monthly fire panel visual checks logged at every campus? Is an NFPA-licensed contractor under contract for annual testing? Are all records on file and current?" },
+        { title: "Pest control records (IPM compliance)",
+          why: "TDA / health code mandate", whyClass: "badge-amber",
+          risk: "A pest sighting in a cafeteria or classroom that gets posted on social media is an immediate PR and health department crisis.",
+          regs: "Texas Health & Safety Code §12.0016 requires school districts to implement a TDA-approved IPM program. The district's IPM coordinator must be licensed by TDA. All pesticide applications require prior parent/staff notification.",
+          verify: "Is our IPM coordinator currently licensed with TDA? Are pesticide application logs current and accessible at all campuses? Is the parent notification protocol being followed?" },
+        { title: "Preventive maintenance schedule adherence",
+          why: "Asset life / warranty protection", whyClass: "badge-amber",
+          risk: "Skipped PM tasks void manufacturer warranties, accelerate equipment failure, and signal to bond rating agencies and TEA that the district is not protecting its capital assets.",
+          regs: "TEA's Long-Range Facilities Planning standards and bond compliance requirements expect districts to follow documented PM programs for major building systems.",
+          verify: "What percentage of this month's scheduled PM tasks have been completed? Is the PM schedule tracked in a work order management system? Any recurring deferrals?" }
       ]},
       { label: "Quarterly", color: "#639922", items: [
-        { title: "Fire drill documentation & compliance", why: "TEA / TFC / state law", whyClass: "badge-red", what: "Texas Education Code requires a specific number of fire drills per year. Drills must be documented with date, time, evacuation time, and any issues.", verify: "Are fire drill records current at all campuses? Any campuses not yet at required drill count? Are records stored and retrievable?" },
-        { title: "Asbestos / AHERA inspection schedule", why: "EPA / AHERA federal mandate", whyClass: "badge-red", what: "Schools must maintain an Asbestos Management Plan and conduct triennial inspections. The Designated Person must be trained. Violations carry federal fines up to $37,500/day.", verify: "Who is our AHERA Designated Person? Is the management plan current? When is the next triennial inspection due?" },
-        { title: "Elevator & lift inspections", why: "TDLR licensing", whyClass: "badge-amber", what: "All elevators and wheelchair lifts must be inspected by TDLR-licensed inspectors. Operating an uninspected elevator is a code violation and liability.", verify: "Are all elevator inspection certificates current and posted? Any overdue inspections? Are maintenance logs up to date?" }
+        { title: "Fire drill documentation & compliance",
+          why: "TEC / state law mandate", whyClass: "badge-red",
+          risk: "Insufficient fire drills are a TEA compliance finding. More critically, students who have not practiced evacuation take longer to exit in a real emergency.",
+          regs: "Texas Education Code §37.108 and 19 TAC §61.1036 require a specific number of fire drills per school year, documented with date, time, and evacuation duration. TEA auditors verify records.",
+          verify: "Are fire drill records current at all campuses? How many drills completed vs. required for this semester? Are records stored centrally and retrievable for a TEA review?" },
+        { title: "Asbestos / AHERA inspection schedule",
+          why: "EPA federal mandate / major fines", whyClass: "badge-red",
+          risk: "AHERA violations carry federal fines up to $37,500 per day per violation — one of the highest penalty exposures in school operations. The risk is compounded by the personal health liability for staff and students.",
+          regs: "EPA's Asbestos Hazard Emergency Response Act (AHERA) requires schools to maintain an Asbestos Management Plan, conduct triennial re-inspections, and designate a trained Designated Person.",
+          verify: "Who is our current AHERA Designated Person and is their training current? When is the next triennial inspection due? Is the Management Plan accessible at every campus?" },
+        { title: "Elevator & wheelchair lift inspections",
+          why: "TDLR licensing requirement", whyClass: "badge-amber",
+          risk: "Operating an uninspected elevator or lift is a TDLR violation and an ADA accessibility failure. An injury in an uninspected unit is nearly indefensible in litigation.",
+          regs: "Texas Occupations Code Chapter 754 requires all elevators and accessibility lifts to be inspected by TDLR-licensed inspectors. Current inspection certificates must be posted.",
+          verify: "Are all elevator and lift inspection certificates current and posted? Are maintenance logs up to date? Any units with overdue inspections?" }
       ]},
       { label: "Semi-Annual", color: "#185FA5", items: [
-        { title: "Emergency operations plan (EOP) facility update", why: "TEA / TEM / safety", whyClass: "badge-red", what: "Each campus EOP must reflect current facility layouts, utility shutoffs, and evacuation routes. Changes from construction or renovation must be incorporated.", verify: "Have facility changes been reflected in EOP updates? Are utility shutoff locations current? Have campus principals been trained on updates?" },
-        { title: "Indoor air quality (IAQ) / HVAC filter review", why: "EPA Tools for Schools / health", whyClass: "badge-blue", what: "EPA recommends IAQ walkthroughs twice per year. Poor IAQ (mold, poor filtration, chemical odors) triggers parent complaints, media attention, and health department involvement.", verify: "Have HVAC filters been replaced on schedule? Any mold or moisture complaints? Has the IAQ coordinator completed the semi-annual walkthrough log?" }
+        { title: "Emergency operations plan (EOP) facility update",
+          why: "TEA / campus safety mandate", whyClass: "badge-red",
+          risk: "An EOP with outdated utility shutoff locations or evacuation routes puts first responders and students at greater risk — and exposes the district to TEA findings.",
+          regs: "TEA requires each campus to maintain a current Emergency Operations Plan under TEC §37.108. The Texas School Safety Center reviews EOP quality. Facility changes must be reflected promptly.",
+          verify: "Have any construction or renovation changes been incorporated into campus EOPs? Are utility shutoff locations current? Have principals and head custodians been briefed on any updates?" },
+        { title: "Indoor air quality (IAQ) / HVAC filter review",
+          why: "EPA / student health", whyClass: "badge-blue",
+          risk: "Mold or poor air quality discovered by a parent, staff member, or health inspector can trigger media coverage, health department involvement, and campus evacuation.",
+          regs: "EPA's Tools for Schools IAQ program recommends semi-annual walkthroughs. Texas schools are subject to DSHS guidance on indoor air quality. Mold remediation may require licensed contractors and disclosure.",
+          verify: "Have HVAC filters been replaced on schedule at all campuses? Any mold, moisture, or air quality complaints pending? Has the IAQ coordinator completed the semi-annual walkthrough and logged findings?" }
       ]},
       { label: "Annual", color: "#534AB7", items: [
-        { title: "TEA facility standards review / Long-Range Facilities Plan", why: "TEA / bond planning / equity", whyClass: "badge-red", what: "TEA requires districts to maintain a Long-Range Facilities Plan. Facility adequacy is reviewed during accreditation. Deficiencies can affect district rating and bond eligibility.", verify: "Is the facilities plan current and submitted? Do any campuses have TEA-flagged deficiencies? Is deferred maintenance quantified in the capital budget?" },
-        { title: "Chemical inventory & TCEQ/OSHA compliance", why: "OSHA HazCom / TCEQ", whyClass: "badge-red", what: "Districts must maintain Safety Data Sheets (SDS) for all hazardous chemicals. OSHA HazCom training is required annually. TCEQ regulates chemical disposal.", verify: "Is the SDS library current and accessible to all staff? Has annual HazCom training been completed and documented? Are chemical storage areas compliant?" },
-        { title: "Custodial staffing model & square footage ratio review", why: "Budget / service quality", whyClass: "badge-amber", what: "Industry standard is ~18,000–22,000 sq ft per custodian. Districts outside this range are either under-cleaned or over-staffed. Annual review informs staffing budgets.", verify: "What is our current sq ft per custodian ratio by campus? Are any campuses consistently not meeting cleaning standards? Is the staffing model in next year's budget request?" }
+        { title: "TEA facility standards review / Long-Range Facilities Plan",
+          why: "TEA accreditation / bond eligibility", whyClass: "badge-red",
+          risk: "Campuses with documented TEA facility deficiencies can affect district accreditation status and jeopardize eligibility for state bond programs and matching funds.",
+          regs: "TEA requires districts to maintain and submit a Long-Range Facilities Plan. TFC (Texas Facilities Commission) and TEA jointly evaluate facility adequacy. Deficiencies must be documented and addressed.",
+          verify: "Is the Long-Range Facilities Plan current and on file? Do any campuses carry unresolved TEA-flagged deficiencies? Is the total deferred maintenance dollar amount quantified in the capital budget?" },
+        { title: "Chemical inventory & TCEQ/OSHA HazCom compliance",
+          why: "OSHA / TCEQ mandate", whyClass: "badge-red",
+          risk: "An OSHA inspection triggered by a staff chemical exposure complaint that finds missing SDS records or no HazCom training documentation results in citations and fines.",
+          regs: "OSHA 29 CFR 1910.1200 (HazCom) requires SDS for all hazardous chemicals, annual staff training, and proper labeling. TCEQ regulates chemical storage, spill containment, and disposal for applicable materials.",
+          verify: "Is the SDS library complete, current, and accessible to all custodial and maintenance staff? Has annual HazCom training been completed and documented for all affected employees?" },
+        { title: "Custodial staffing model & square footage ratio",
+          why: "Service quality / budget equity", whyClass: "badge-amber",
+          risk: "Campuses significantly over the 22,000 sq ft per custodian threshold will chronically fail cleanliness standards regardless of individual staff effort — the model is the problem, not the person.",
+          regs: "TEA facility adequacy standards and general best practices benchmark ~18,000–22,000 sq ft per custodian for a standard clean. Significant variances should be documented and addressed in the budget.",
+          verify: "What is the current sq ft per custodian ratio at each campus? Are any campuses significantly over the benchmark? Is the staffing model included in the next fiscal year's budget request?" }
       ]}
     ]
   }
 ];
 
-const freqColors = { "Daily":"#E24B4A","Weekly":"#E8A020","Monthly":"#BA7517","Quarterly":"#639922","Semi-Annual":"#185FA5","Annual":"#534AB7" };
+const freqColors = {"Daily":"#E24B4A","Weekly":"#E8A020","Monthly":"#BA7517","Quarterly":"#639922","Semi-Annual":"#185FA5","Annual":"#534AB7"};
 
 function buildItem(item) {
   return `<div class="item-row">
-    <div class="item-title"><i class="ti ti-circle-dot"></i><span>${item.title}</span></div>
+    <div class="item-title"><i class="ti ti-circle-dot"></i><span>${item.title} <span class="why-badge ${item.whyClass}">${item.why}</span></span></div>
     <div class="item-grid">
-      <div class="item-cell"><div class="cell-label">Why it matters</div><div class="cell-body">${item.what}<br><span class="why-badge ${item.whyClass}">${item.why}</span></div></div>
-      <div class="item-cell"><div class="cell-label">Compliance context</div><div class="cell-body">${item.what}</div></div>
-      <div class="item-cell"><div class="cell-label">Ask / verify in check-ins</div><div class="cell-body" style="color:var(--text-primary)">${item.verify}</div></div>
+      <div class="item-cell">
+        <div class="cell-label">Why it matters</div>
+        <div class="cell-body">${item.risk}<br><br><span style="font-size:11px;font-weight:600;color:var(--text-tertiary);text-transform:uppercase;letter-spacing:.05em">Regulation / Authority</span><br>${item.regs}</div>
+      </div>
+      <div class="item-cell">
+        <div class="cell-label">Ask / verify in director check-ins</div>
+        <div class="cell-verify">${item.verify}</div>
+      </div>
     </div>
   </div>`;
 }
